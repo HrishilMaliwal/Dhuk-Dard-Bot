@@ -11,6 +11,7 @@ import pandas as pd
 #import tensorflow as tf
 #all packages 
 import nltk 
+nltk.download('omw-1.4')
 import string 
 import re
 import random
