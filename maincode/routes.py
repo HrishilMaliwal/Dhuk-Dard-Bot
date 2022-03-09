@@ -3,7 +3,6 @@ from maincode import app, db, bcrypt
 from maincode.forms import RegistrationForm, LoginForm
 from maincode.models import User
 from flask_login import login_user
-from model_files.model_funct import predict_share,show_anal
 
 stk=''
 
@@ -13,7 +12,7 @@ def home():
     global stk
     if request.method == "POST":
         stk = request.form["stock"]
-        show_anal(stk)
+        # show_anal(stk)
         return redirect(url_for("analysis"))
     else:
         return render_template('home.html')
@@ -38,7 +37,7 @@ def paid_home():
     global stk
     if request.method == "POST":
         stk = request.form["stock"]
-        predict_share(stk)
+        # predict_share(stk)
         return redirect(url_for("predict"))
     else:
         return render_template('paid_home.html')
