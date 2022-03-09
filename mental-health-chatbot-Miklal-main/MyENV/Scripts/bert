@@ -1,4 +1,0 @@
-#!h:\downloads\mental-health-chatbot-miklal-main\myenv\scripts\python.exe
-
-from bert_embedding.cli import main
-main()
