@@ -17,10 +17,10 @@ def home():
     else:
         return render_template('home.html')
 
-@app.route("/predict")
-def predict():
+@app.route("/resources")
+def resources():
     # return f"<h1>{stk}</h1>"
-    return render_template('predict.html')
+    return redirect(url_for("resources.html"))
 
 @app.route("/analysis")
 def analysis():
