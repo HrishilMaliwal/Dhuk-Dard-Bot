@@ -40,7 +40,13 @@
   
 </head>
 
-<script src="{{ url_for('static', filename='vendor/Datatable/dataTables.bootstrap5.min.js') }}">
+<script src="{{ url_for('static', filename='vendor/Datatable/dataTables.bootstrap5.min.js') }}"
+src="{{ url_for('static', filename='vendor/Datatable/dataTables.bootstrap5.min.js') }}"
+src="{{ url_for('static', filename='vendor/Datatable/jquery-3.5.1.js') }}">
+
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
 </script>
 
 <body>
@@ -93,36 +99,71 @@
     </thead>
     <tbody>
         <tr>
-            <td>AHAMA</td>
-            <td>https://business.google.com/v/ahama/014462141603731855254/3887/_</td>
-            <td>NA</td>
-            <td>NA</td>
-            <td>Cumballa Hill, Mumbai,India</td>
-            <!-- <td>2011/04/25</td> -->
-         
-        </tr>
-        <tr>
           <td>iCALL</td>
-          <td>https://icallhelpline.org/</td>
+          <td><a href="https://icallhelpline.org/" target="_blank">icallhelpline.org</a></td>
           <td>+91 9152987821</td>
-          <!-- <td>icall@tiss.edu</td> -->
-          <td>61</td>
-          <!-- <td>2011/04/25</td> -->
-       
-      </tr>        <tr>
-        <td>Tiger Nixon</td>
-        <td>System Architect</td>
-        <td>Edinburgh</td>
-        <td>61</td>
-        <!-- <td>2011/04/25</td> -->
-     
-    </tr>        <tr>
-      <td>Tiger Nixon</td>
-      <td>System Architect</td>
-      <td>Edinburgh</td>
-      <td>61</td>
-      <!-- <td>2011/04/25</td> -->
-   
+          <td><a href="mailto:icall@tiss.edu" target="_blank">icall@tiss.edu</a></td>
+          <td>Mumbai</td>
+        </tr>
+        
+        <tr>
+          <td>Sangath</td>
+          <td><a href="https://sangath.in/" target="_blank">sangath.in</a></td>
+          <td>+91 9552530557</td>
+          <td><a href="mailto:contactus@sangath.in" target="_blank">contactus@sangath.in</a></td>
+          <td>Goa</td>
+        </tr>
+        
+        <tr>
+          <td>Mitram foundation</td>
+          <td><a href="https://www.mitramfoundation.org/" target="_blank">mitramfoundation.org</a></td>
+          <td>+91 8025722573</td>
+          <td><a href="mailto: share@mitramfoundation.org" target="_blank">share@mitramfoundation.org</a></td>
+          <td>Bangalore</td>
+        </tr>
+        
+        <tr>
+          <td>Vandrevala foundation</td>
+          <td><a href="https://www.vandrevalafoundation.com/" target="_blank">vandrevalafoundation.com</a></td>
+          <td>+91 9999666555</td>
+          <td><a href="mailto: help@vandrevalafoundation.com" target="_blank">help@vandrevalafoundation.com</a></td>
+          <td>Mumbai</td>
+        </tr>
+        
+        <tr>
+          <td>Connectingngo</td>
+          <td><a href="https://connectingngo.org/" target="_blank">connectingngo.org</a></td>
+          <td>+91 9922004305</td>
+          <td><a href="mailto: distressmailsconnecting@gmail.com" target="_blank">distressmailsconnecting@gmail.com</a></td>
+          <td>Pune</td>
+        </tr>
+        
+        <tr>
+          <td>Parivarthan</td>
+          <td><a href="https://parivarthan.org/" target="_blank">parivarthan.org</a></td>
+          <td>+91 7676602602</td>
+          <td><a href="mailto: information@parivarthan.org" target="_blank">information@parivarthan.org</a></td>
+          <td>Bangalore</td>
+        </tr>
+
+        <tr>
+          <td>Voice That Cares</td>
+          <td><a href="https://www.rocf.org/voice-that-cares/" target="_blank">www.rocf.org</a></td>
+          <td>+91 8448844845</td>
+          <td><a href="mailto: info@rocf.org" target="_blank">info@rocf.org</a></td>
+          <td>Bangalore</td>
+        </tr>
+         
+        <tr>
+          <td>Mann Talks</td>
+          <td><a href="https://www.manntalks.org/" target="_blank">manntalks.org</a></td>
+          <td>+91 8448844845</td>
+          <td><a href="mailto: counselling@manntalks.org" target="_blank">counselling@manntalks.org</a></td>
+          <td>Mumbai</td>
+        </tr>
+
+
+        
   </tr>
        
     </tbody>
@@ -232,89 +273,7 @@
     </section>
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="chatbot" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Chat Bot</h2>
-          <h3>Check our <span>Chatbot</span></h3>
-        </div>
-<!-- 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-           
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src=" {{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-               </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-             
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-        </div> -->
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
+    
    
 
     </section>
@@ -402,7 +361,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>Mukesh Patel, NMIMS</p>
+              <p>Mukesh Patel School Of Technology Management & Engineering, NMIMS</p>
             </div>
           </div>
 
@@ -410,7 +369,8 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>therapai@gmail.com</p>
+              <a href="mailto: therapai@gmail.com" target="_blank">therapai@gmail.com</a>
+              <p></p>
             </div>
           </div>
 
@@ -418,7 +378,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+91 9007740721</p>
+              <p>+91 9653232334</p>
             </div>
           </div>
 
