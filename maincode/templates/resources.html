@@ -69,7 +69,17 @@ $(document).ready(function() {
 
 
     
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <!-- <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto " href="#chatbot">ChatBot</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('resources') }}">Resources</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav> -->
       <br>
       <br>
       <br>
@@ -189,16 +199,16 @@ $(document).ready(function() {
 
         <div class="section-title">
           
-          <h3>Find Out More <span>About our model</span></h3>
+          <h3><span>Therapy</span>on the go!</h3>
           <p>Our model is trained on a dataset that contains real patient-therapists interactions</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="{{ url_for('static', filename='assets/img/about.jpg') }} " class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='assets/img/dukhdard.jfif') }} " class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Trained using XXX</h3>
+            <h3></h3>
             <p class="fst-italic">
               Stuff about "our model"
             </p>
