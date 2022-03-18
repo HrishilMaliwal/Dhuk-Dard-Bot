@@ -23,6 +23,12 @@ def resources():
     # return redirect(url_for("resources["))
     return render_template('resources.html')
 
+@app.route("/activities")
+def activities():
+    # return f"<h1>{stk}</h1>"
+    # return redirect(url_for("resources["))
+    return render_template('activities.html')
+
 
 @app.route("/analysis")
 def analysis():
