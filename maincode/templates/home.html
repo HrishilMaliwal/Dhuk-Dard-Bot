@@ -56,7 +56,8 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto " href="#chatbot">ChatBot</a></li>  
           <li><a class="nav-link scrollto" href="{{ url_for('resources') }}"target="_blank">Resources</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <!-- <li><a class="nav-link scrollto" href="{{ url_for('activities') }}"target="_blank">Activities</a></li> -->
+          <li><a class="nav-link scrollto" href="#team">Testimonies</a></li>
           <li><a class="nav-link scrollto" href="{{ url_for('login') }}">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -97,25 +98,8 @@
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <h3>Trained using XXX</h3>
             <p class="fst-italic">
-              Stuff about "our model"
+              The idea behind Therap.ai is to use a Transformer based training model due to certain superior features like accepting the entire input sequence and lower complexity of the self-attention mechanism. The transformer architecture comprises an encoder-decoder system where the input from the user is provided as an input to the encoder. The transformer model has also shown promising results in several previous studies.
             </p>
-            <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5><br>"key" highlight 1</h5>
-                  
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>"key" highlight 2</h5>
-                  
-                </div>
-              </li>
-            </ul>
-            
           </div>
         </div>
 
@@ -139,7 +123,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
               <p>Activities Suggested</p>
             </div>
           </div>
@@ -166,43 +150,7 @@
     </section><!-- End Counts Section -->
 
     <section id="" class="clients section-bg">
-      <!-- <div class="container" data-aos="zoom-in">
 
-        <div class="row">
-
-          <form class="form-pt1" action="#" method="POST" >
-                        <b></b><label for="stock">Choose a Stock:</label></b>
-                        <select name="stock" id="stock">
-                          <option value="CIPLA">CIPLA</option>
-                          <option value="MARUTI">MARUTI</option>
-                          <option value="TCS">TCS</option>
-                          <option value="HEROMOTOCO">HEROMOTOCO</option>
-                          <option value="RELIANCE">RELIANCE</option>
-                          <option value="ULTRACEMCO">ULTRACEMCO</option>
-                          <option value="MM">MM</option>
-                          <option value="WIPRO">WIPRO</option>
-                          <option value="NTPC">NTPC</option>
-                          <option value="COALINDIA">COALINDIA</option>
-                          <option value="BAJFINANCE">BAJFINANCE</option>
-                          <option value="ICICIBANK">ICICIBANK</option>
-                          <option value="BRITANNIA">BRITANNIA</option>
-                          <option value="SHREECEM">SHREECEM</option>
-                          <option value="LT">LT</option>
-                          <option value="TECHM">TECHM</option>
-                          <option value="GRASIM">GRASIM</option>
-                          <option value="NESTLEIND">NESTLEIND</option>
-                          <option value="BAJAJ-AUTO">BAJAJ-AUTO</option>
-                          <option value="BHARTIARTL">BHARTIARTL</option>
-                          <option value="GAIL">GAIL</option>
-                          <option value="TITAN">TITAN</option>
-                          <option value="HINDALCO">HINDALCO</option>
-                          <option value="BAJAJFINSV">BAJAJFINSV</option>
-                          <option value="TATASTEEL">TATASTEEL</option>
-                        </select>
-                        <button type="submit"><i class="bi bi-search"></i></button>
-          </form>
-        </div>
-      </div> -->
     </section>
 
     <!-- ======= Portfolio Section ======= -->
@@ -213,93 +161,15 @@
           <h2>Chat Bot</h2>
           <h3>Check our <span>Chatbot</span></h3>
         </div>
-<!-- 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-           
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src=" {{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-               </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-             
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-            </div>
-          </div>
-
-        </div> -->
-
       </div>
     </section><!-- End Portfolio Section -->
-
-    <section id="resources">
-
-    </section>
-
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <h3>Our Hardworking <span>Team</span></h3>
+          <h2>Testimonies</h2>
+          <h3>Testemonials by our <span>Clients</span></h3>
         </div>
 
         <div class="row">
@@ -310,8 +180,8 @@
                 <img src="{{ url_for('static', filename='assets/img/team/K.jpg') }}" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Hersh Kenkre simple example, check our Contact Us Form. We take user feedback using this form and then we are using one CGI program which is collecting this information and sending us email to the one given email ID.</h4>
-              
+                <h4>Bhavik Bubbles</h4>
+                <p>I was one of the lucky ones. I opened up Therap.ai, and instantly found my dream therapist on the first try. Something about the website was just warm and friendly to me. They've really created a safe space for me</p>
               </div>
             </div>
           </div>
@@ -323,8 +193,8 @@
             
               </div>
               <div class="member-info">
-                <h4>Madiha Mansoori</h4>
-                
+                <h4>Jash Katkar</h4>
+                <p>I'm on third my mental health app. It took me months of research to find an app that I like. I found Therap.ai truly amazing. I felt so understood in a way I didn’t with my other two apps.</p>
               </div>
             </div>
           </div> 
@@ -336,7 +206,8 @@
               
               </div>
               <div class="member-info">
-                <h4>Hrishil Maliwal</h4>
+                <h4>Mihir Dev</h4>
+                <p>Therap.ai combines natural language understanding with clinical assurance which helps everyone manage their mental health in the new normal.</p>
               </div>
             </div>
           </div>
@@ -348,8 +219,8 @@
                 
               </div>
               <div class="member-info">
-                <h4>Sharvil Kotian</h4>
-            
+                <h4>Ran out of funny names, give up he life me</h4>
+                <p>The help that I got from Therap.ai was crucial in helping me during my crisis. I am proof great things are happening at Therap.ai. I applaud the organization for it’s genuine commitment of making life easier for those in need.</p>
               </div>
             </div>
           </div>
@@ -357,15 +228,16 @@
         </div>
 
       </div>
-    </section><!-- End Team Section
-
-    
-
+    </section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
+          <p>Disclaimer - <i>Therap.ai is not designed to assist with crises such as abuse, severe mental health conditions that may cause feelings of suicide, harm to self, and any other medical emergencies. Therap.ai cannot and will not offer medical or clinical advice. It can only suggest that users to seek professional medical help. Please reach out to your country-specific suicide hotline in case of an emergency.</i></p>
+ 
+          <p><i>You must be at least 18 years of age to use Therap.ai. If you are between 13 and 18 years of age, please use Therap.ai along with your parents or legal guardian. Therap.ai is not designed to be used by children under 13.</i></p>
+          <br>
           <h2>Contact</h2>
           <h3><span>Contact Us</span></h3>
           
@@ -376,7 +248,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>Mukesh Patel, NMIMS</p>
+              <p>Mukesh Patel School Of Technology Management & Engineering, NMIMS</p>
             </div>
           </div>
 
@@ -395,28 +267,13 @@
               <p>+91 9007740721</p>
             </div>
           </div>
-
         </div>
-
-        
-
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
- 
-
-    
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-        
-    </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
