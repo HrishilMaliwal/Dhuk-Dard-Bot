@@ -29,6 +29,12 @@ def activities():
     # return redirect(url_for("resources["))
     return render_template('activities.html')
 
+@app.route("/chatbot")
+def chatbot():
+    # return f"<h1>{stk}</h1>"
+    # return redirect(url_for("resources["))
+    return render_template('chatbot.html')
+
 
 @app.route("/analysis")
 def analysis():

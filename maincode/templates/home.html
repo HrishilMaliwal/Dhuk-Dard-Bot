@@ -54,7 +54,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#chatbot">ChatBot</a></li>  
+          <!-- <li><a class="nav-link scrollto " href="#chatbot">ChatBot</a></li>   -->
+          <li><a class="nav-link scrollto" href="{{ url_for('chatbot') }}"target="_blank">ChatBot</a></li>
           <li><a class="nav-link scrollto" href="{{ url_for('resources') }}"target="_blank">Resources</a></li>
           <li><a class="nav-link scrollto" href="{{ url_for('activities') }}"target="_blank">Activities</a></li>
           <li><a class="nav-link scrollto" href="#team">Testimonies</a></li>
@@ -96,9 +97,9 @@
             <img src="{{ url_for('static', filename='assets/img/online_treatment.png') }} " class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Trained using XXX</h3>
+            <h3>Trained using Logistic Regression Classifier</h3>
             <p class="fst-italic">
-              The idea behind Therap.ai is to use a Transformer based training model due to certain superior features like accepting the entire input sequence and lower complexity of the self-attention mechanism. The transformer architecture comprises an encoder-decoder system where the input from the user is provided as an input to the encoder. The transformer model has also shown promising results in several previous studies.
+              The idea behind Therap.ai is to use a Logistic Regression Classifier based training model due to certain superior features like accepting the entire input sequence and lower complexity of the self-attention mechanism. The transformer architecture comprises an encoder-decoder system where the input from the user is provided as an input to the encoder. The transformer model has also shown promising results in several previous studies.
             </p>
           </div>
         </div>
@@ -264,7 +265,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+91 9007740721</p>
+              <p>+91 9653232334</p>
             </div>
           </div>
         </div>
