@@ -136,13 +136,23 @@ img {
       
       <h1 class="logo"><a href="index.html">Therap<span>.ai</span></a></h1>
       <br>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{{ url_for('home') }}">Home</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#chatbot">ChatBot</a></li>   -->
+          <li><a class="nav-link scrollto" href="{{ url_for('chatbot') }}"target="_blank">ChatBot</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('resources') }}">Resources</a></li>
+        
+          <li><a class="nav-link scrollto" href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
       </div>
-    </section><!-- End Hero -->
-  
+
   </header><!-- End Header -->
   <div class="container" data-aos="zoom-out" data-aos-delay="100">
     <br>
-        <h1>Activities</h1>
+        <h3>Activities</h3>
         <div class="d-flex">  
        
         </div>
@@ -151,7 +161,7 @@ img {
   
   <div class="row">
     <div class="container1">
-      <img src="{{ url_for('static', filename='assets/img/Group 67.png') }}" alt="" />
+      <img src="{{ url_for('static', filename='assets/img/Group 68.png') }}" alt="" />
       <p class="title">Sudoku</p>
       <div class="overlay"></div>
       <div class="button"><a href="https://www.websudoku.com/" target="_blank"> Play </a></div>
@@ -186,8 +196,8 @@ img {
     </div>
     
     <div class="container1">
-      <img src="{{ url_for('static', filename='assets/img/Group 68.png') }}" alt="" />
-      <p class="title">Sudoku</p>
+      <img src="{{ url_for('static', filename='assets/img/Group 76.png') }}" alt="" />
+      <p class="title">Crossword</p>
       <div class="overlay"></div>
       <div class="button"><a href="https://www.websudoku.com/" target="_blank"> Play </a></div>
     </div>
